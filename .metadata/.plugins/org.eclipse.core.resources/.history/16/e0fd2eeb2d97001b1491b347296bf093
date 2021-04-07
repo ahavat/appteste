@@ -1,0 +1,5 @@
+package com.daniel.repositories;
+
+public class Cliente {
+
+}

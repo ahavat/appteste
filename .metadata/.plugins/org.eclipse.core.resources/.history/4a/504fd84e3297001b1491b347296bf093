@@ -1,0 +1,46 @@
+package com.daniel.domain;
+
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+@Entity
+public class ItemPedido {
+
+	private Integer quantidade;
+	private String comentario;
+
+	@ManyToOne
+	@JoinColumn(name="pedido_id")
+	private Pedido pedido;
+	
+	@ManyToOne
+	@JoinColumn(name="produto_id")
+	private Produto produto;
+	
+	public ItemPedido() {
+	}
+	
+	public ItemPedido(Integer quantidade, String comentario) {
+		super();
+		this.quantidade = quantidade;
+		this.comentario = comentario;
+	}
+
+	public Integer getQuantidade() {
+		return quantidade;
+	}
+
+	public void setQuantidade(Integer quantidade) {
+		this.quantidade = quantidade;
+	}
+
+	public String getComentario() {
+		return comentario;
+	}
+
+	public void setComentario(String comentario) {
+		this.comentario = comentario;
+	}
+
+}

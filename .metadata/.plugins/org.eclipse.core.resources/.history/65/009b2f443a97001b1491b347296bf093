@@ -1,0 +1,51 @@
+package com.daniel.domain;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+
+@Entity
+public class ItemPedido implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	private Integer id;
+	private Integer quantidade;
+	private String comentario;
+	
+	private Produto produto;
+
+	public ItemPedido() {
+	}
+	
+	public ItemPedido(Integer quantidade, String comentario) {
+		super();
+		this.quantidade = quantidade;
+		this.comentario = comentario;
+	}
+
+	public Integer getQuantidade() {
+		return quantidade;
+	}
+
+	public void setQuantidade(Integer quantidade) {
+		this.quantidade = quantidade;
+	}
+
+	public String getComentario() {
+		return comentario;
+	}
+
+	public void setComentario(String comentario) {
+		this.comentario = comentario;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.daniel.domain.resources;
+
+public class ClienteResources {
+
+}

@@ -1,0 +1,33 @@
+package com.daniel.domain;
+
+public class ItemPedido {
+	
+		private Integer quantidade;
+		private String comentario;
+		
+		
+		public ItemPedido(Integer quantidade, String comentario) {
+			super();
+			this.quantidade = quantidade;
+			this.comentario = comentario;
+		}
+		
+		
+		public Integer getQuantidade() {
+			return quantidade;
+		}
+		public void setQuantidade(Integer quantidade) {
+			this.quantidade = quantidade;
+		}
+		public String getComentario() {
+			return comentario;
+		}
+		public void setComentario(String comentario) {
+			this.comentario = comentario;
+		}
+		
+		
+		
+		
+
+}
